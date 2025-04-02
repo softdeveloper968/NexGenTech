@@ -1,0 +1,130 @@
+﻿<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #f6f6f6;">
+	<tr>
+		<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;"></td>
+		<td class="container" style="font-family: sans-serif; font-size: 14px; vertical-align: top; display: block; Margin: 0 auto; padding: 10px;">
+			<div class="content" style="box-sizing: border-box; display: block; Margin: 0 auto; padding: 10px;">
+
+				<!-- START CENTERED WHITE CONTAINER -->
+				<table role="presentation" class="main" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background: #ffffff; border-radius: 3px;">
+
+					<!-- START MAIN CONTENT AREA -->
+					<tr>
+						<td class="wrapper" style="font-family: sans-serif; font-size: 14px; vertical-align: top; box-sizing: border-box; padding: 20px;">
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+								<tr>
+									<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+										<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi,</p>
+										<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Following Configurations and Batches are Failed.</p>
+										
+										<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+											<style>
+												table {
+													font-family: arial, sans-serif;
+													border-collapse: collapse;
+													width: 100%;
+												}
+
+												td, th {
+													border: 1px solid #dddddd;
+													text-align: left;
+													padding: 8px;
+												}
+
+												tr:nth-child(even) {
+													background-color: #dddddd;
+												}
+											</style>
+											<tr>
+												<th>Config Id</th>
+												<th>Client Code</th>
+												<th>Client Ins</th>
+												<th>Auth Type</th>
+												<th>Username</th>
+												<th>Password</th>
+												<th>Target Url</th>
+												<th>Failure Reported</th>
+												<th>Failure Message</th>
+												<th>Last Modified On</th>
+											</tr>
+											@foreach(var item in Model.FailedConfigurations)
+											{
+											<tr>
+												<td>@item.ConfigId</td>
+												<td>@item.ClientCode</td>
+												<td>@item.ClientInsuranceLookupName</td>
+												<td>@item.AuthTypeId</td>
+												<td>@item.Username</td>
+												<td>@item.Password</td>
+												<td>@item.TargetUrl</td>
+												<td>@item.FailureReported</td>
+												<td>@item.FailureMessage</td>
+												<td>@item.LastModifiedOn?.ToShortDateString()</td>
+											</tr>
+											}
+										</table>
+										<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+											<style>
+												table {
+													font-family: arial, sans-serif;
+													border-collapse: collapse;
+													width: 100%;
+												}
+
+												td, th {
+													border: 1px solid #dddddd;
+													text-align: left;
+													padding: 8px;
+												}
+
+												tr:nth-child(even) {
+													background-color: #dddddd;
+												}
+											</style>
+											<tr>
+												<th>Client Code</th>
+												<th>Insurence Name</th>
+												<th>Client Insurance Id</th>
+												<th>Auth Type</th>
+												<th>Assigned Date Time Utc</th>
+												<th>Assigned To Rpa Code</th>
+												<th>Completed DateTime Utc</th>
+												<th>Aborted On Utc</th>
+												<th>Aborted Reason</th>
+												<th>Created On</th>
+												<th>Last Modified On</th>
+												<th>Assigned Client Rpa ConfigurationId</th>
+												<th>Is Deleted</th>
+											</tr>
+											@foreach(var item in Model.FailedBatches)
+											{
+											<tr>
+												<td>@item.ClientInsurance.Client.ClientCode</td>
+												<td>@item.ClientInsurance.RpaInsurance.Name</td>
+												<td>@item.ClientInsurance.RpaInsurance.Id</td>
+												<td>@item.AuthType.Name</td>
+												<td>@item.AssignedDateTimeUtc</td>
+												<td>@item.AssignedToRpaCode</td>
+												<td>@item.CompletedDateTimeUtc?.ToShortDateString()</td>
+												<td>@item.AbortedOnUtc?.ToShortDateString()</td>
+												<td>@item.AbortedReason</td>
+												<td>@item.CreatedOn?.ToShortDateString()</td>
+												<td>@item.LastModifiedOn?.ToShortDateString()</td>
+												<td>@item.AssignedClientRpaConfigurationId</td>
+												<td>@item.IsDeleted</td>
+											</tr>
+											}
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+          
+					<!-- END MAIN CONTENT AREA -->
+				</table>
+				<!-- END CENTERED WHITE CONTAINER -->
+			</div>
+		</td>
+		<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">&nbsp;</td>
+	</tr>
+</table>

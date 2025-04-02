@@ -1,0 +1,1002 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure\\MedHelpAuthorizations.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj",
+        "projectName": "UhcClaimsApi",
+        "projectPath": "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj",
+        "projectName": "MedHelpAuthorizations.Application",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.20.0, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "Finbuckle.MultiTenant": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "LazyCache": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj",
+        "projectName": "MedHelpAuthorizations.Client.Infrastructure",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "Blazored.SessionStorage": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "HttpClientToCurl": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.WebUtilities": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.11.2, )"
+            },
+            "Toolbelt.Blazor.HttpClientInterceptor": {
+              "target": "Package",
+              "version": "[10.2.0, )"
+            },
+            "self_pay_eligibility_api.Application": {
+              "target": "Package",
+              "version": "[1.0.240, )"
+            },
+            "self_pay_eligibility_api.Client.Infrastructure": {
+              "target": "Package",
+              "version": "[1.0.240, )"
+            },
+            "self_pay_eligibility_api.Shared": {
+              "target": "Package",
+              "version": "[1.0.240, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj",
+        "projectName": "MedHelpAuthorizations.Domain",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\MedHelpAuthorizations.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Identity\\MedHelpAuthorizations.Infrastructure.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Identity\\MedHelpAuthorizations.Infrastructure.Identity.csproj",
+        "projectName": "MedHelpAuthorizations.Infrastructure.Identity",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Identity\\MedHelpAuthorizations.Infrastructure.Identity.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              },
+              "D:\\AITMGA\\AIT\\Templates\\MedHelpAuthorizations.Template.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\Templates\\MedHelpAuthorizations.Template.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Finbuckle.MultiTenant": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Finbuckle.MultiTenant.AspNetCore": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Finbuckle.MultiTenant.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj",
+        "projectName": "MedHelpAuthorizations.Infrastructure.Shared",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Finbuckle.MultiTenant": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.5, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure\\MedHelpAuthorizations.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure\\MedHelpAuthorizations.Infrastructure.csproj",
+        "projectName": "MedHelpAuthorizations.Infrastructure",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure\\MedHelpAuthorizations.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\ExternalApiClients\\UHC\\UhcClaimsApi\\UhcClaimsApi.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Application\\MedHelpAuthorizations.Application.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Client.Infrastructure\\MedHelpAuthorizations.Client.Infrastructure.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Identity\\MedHelpAuthorizations.Infrastructure.Identity.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Identity\\MedHelpAuthorizations.Infrastructure.Identity.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Infrastructure.Shared\\MedHelpAuthorizations.Infrastructure.Shared.csproj"
+              },
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Finbuckle.MultiTenant.AspNetCore": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Finbuckle.MultiTenant.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.6, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.8.6, )"
+            },
+            "HttpClientToCurl": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "RazorEngineCore": {
+              "target": "Package",
+              "version": "[2023.11.2, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "System.Linq.Queryable": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj",
+        "projectName": "MedHelpAuthorizations.Shared",
+        "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[30.0.1, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Localization.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "self_pay_eligibility_api.Shared": {
+              "target": "Package",
+              "version": "[1.0.240, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\AITMGA\\AIT\\Templates\\MedHelpAuthorizations.Template.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\AITMGA\\AIT\\Templates\\MedHelpAuthorizations.Template.csproj",
+        "projectName": "MedHelpAuthorizations.Template",
+        "projectPath": "D:\\AITMGA\\AIT\\Templates\\MedHelpAuthorizations.Template.csproj",
+        "packagesPath": "C:\\Users\\Ariel-pc\\.nuget\\packages\\",
+        "outputPath": "D:\\AITMGA\\AIT\\Templates\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "D:\\AITMGA\\AIT\\NuGet.Config",
+          "C:\\Users\\Ariel-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://aitauthorizations-aitnugetserver.azurewebsites.net/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj": {
+                "projectPath": "D:\\AITMGA\\AIT\\MedHelpAuthorizations.Shared\\MedHelpAuthorizations.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MedHelpAuthorizations.Application": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

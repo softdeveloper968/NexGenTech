@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Persistence\Context\DataPipeDbContext.cs" />
+    <Compile Remove="Persistence\Context\DataPipeDbContextOptionsBuilderExtensions.cs" />
+    <Compile Remove="Persistence\Context\ModelBuilderExtensions.cs" />
+    <Compile Remove="Persistence\Initialization\DatabaseInitializer.cs" />
+    <Compile Remove="Persistence\Initialization\DataPipeContextDesignTimeFactory.cs" />
+    <Compile Remove="Persistence\Initialization\DataPipeDbInitializer.cs" />
+    <Compile Remove="Persistence\Initialization\DataPipeDbSeeder.cs" />
+    <Compile Remove="Persistence\Initialization\DesignTimeFactoryOptions.cs" />
+    <Compile Remove="Persistence\Initialization\DfStagingDbContextDesignTimeFactory.cs" />
+    <Compile Remove="Persistence\Initialization\IDatabaseInitializer.cs" />
+    <Compile Remove="Persistence\SchemaNames.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.11.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.61.3" />
+    <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedHelpAuthorizations.Application\MedHelpAuthorizations.Application.csproj" />
+    <ProjectReference Include="..\MedHelpAuthorizations.Infrastructure.Shared\MedHelpAuthorizations.Infrastructure.Shared.csproj" />
+    <ProjectReference Include="..\Templates\MedHelpAuthorizations.Template.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="SqlScripts\CyFluent\" />
+  </ItemGroup>
+
+</Project>

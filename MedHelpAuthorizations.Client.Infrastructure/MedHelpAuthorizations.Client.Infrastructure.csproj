@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Authors>Kevin Mcaffery</Authors>
+		<Company>Automated Integration Technologies</Company>
+		<Description>API Client Infrastructure</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Managers\Administration\ClientsManager.cs" />
+		<Compile Remove="Managers\Administration\IClientsManager.cs" />
+		<Compile Remove="Managers\Executive\ExecutiveDashboardManager.cs" />
+		<Compile Remove="Managers\Executive\IExecutiveDashboardManager.cs" />
+		<Compile Remove="Managers\IntegratedServices\Eligibility\DiscoveredEligibilityManager.cs" />
+		<Compile Remove="Managers\IntegratedServices\Eligibility\IDiscoveredEligibilityManager.cs" />
+		<Compile Remove="Mappings\QuestionnaireProfile.cs" />
+		<Compile Remove="Routes\ClientEndpoints.cs" />
+		<Compile Remove="Routes\IntegratedServices\Eligibility\PayerEndpoints.cs" />
+		<Compile Remove="Routes\ProductsEndpoints.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="Blazored.SessionStorage" Version="2.4.0" />
+		<PackageReference Include="HttpClientToCurl" Version="2.0.6" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="8.0.0" />
+		<PackageReference Include="MudBlazor" Version="6.11.2" />
+		<PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
+		<PackageReference Include="self_pay_eligibility_api.Application" Version="1.0.240" />
+		<PackageReference Include="self_pay_eligibility_api.Client.Infrastructure" Version="1.0.240" />
+		<PackageReference Include="self_pay_eligibility_api.Shared" Version="1.0.240" />
+		<PackageReference Include="Toolbelt.Blazor.HttpClientInterceptor" Version="10.2.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\MedHelpAuthorizations.Application\MedHelpAuthorizations.Application.csproj" />
+		<ProjectReference Include="..\MedHelpAuthorizations.Domain\MedHelpAuthorizations.Domain.csproj" />
+		<ProjectReference Include="..\MedHelpAuthorizations.Shared\MedHelpAuthorizations.Shared.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Routes\IntegratedServices\Eligibility\" />
+		<Folder Include="Routes\MultiTenancy\" />
+	</ItemGroup>
+</Project>

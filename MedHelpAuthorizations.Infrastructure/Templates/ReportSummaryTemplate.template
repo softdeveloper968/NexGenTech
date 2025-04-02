@@ -1,0 +1,13 @@
+﻿<div>
+	<p style="font-family: sans-serif; font-size: 14px;">
+		Dear @Model.FirstName,
+	</p>
+
+	<p style="font-family: sans-serif; font-size: 14px;">
+		Your @Model.FileName report has been successfully generated.
+	</p>
+
+	<p style="font-family: sans-serif; font-size: 14px;">
+		Thank you for using our service.
+	</p>
+</div>

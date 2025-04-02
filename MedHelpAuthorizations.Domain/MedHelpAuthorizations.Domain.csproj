@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Authors>Kevin Mcaffery</Authors>
+		<Company>Automated Integration Technologies</Company>
+		<Description>MedHelpAuthorizations.Domain</Description>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <LangVersion>preview</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Entities\Authorizations_dbContext.cs" />
+		<Compile Remove="Entities\ClientApiIntegration.cs" />
+		<Compile Remove="Entities\ClientDefaultQuestionnaireAnswer.cs" />
+		<Compile Remove="Entities\ClientEmployeeDepartment.cs" />
+		<Compile Remove="Entities\ClientsUser.cs" />
+		<Compile Remove="Entities\EmployeeClaimStatusExceptionReasonCategory.cs" />
+		<Compile Remove="Entities\Enums\ApplicationFeatureEnum.cs" />
+		<Compile Remove="Entities\Enums\ServiceTypeEnum.cs" />
+		<Compile Remove="Entities\Insurance.cs" />
+		<Compile Remove="Entities\IntegratedServices\ServiceType.cs" />
+		<Compile Remove="Entities\Questionnaire.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CsvHelper" Version="30.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MedHelpAuthorizations.Shared\MedHelpAuthorizations.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Entities\Catalog\" />
+	  <Folder Include="Entities\Enums\Extensions\" />
+	  <Folder Include="Extensions\" />
+	</ItemGroup>
+
+</Project>

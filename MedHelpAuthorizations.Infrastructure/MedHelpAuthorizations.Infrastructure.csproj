@@ -1,0 +1,336 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Mappings\CsvHelper\**" />
+		<EmbeddedResource Remove="Mappings\CsvHelper\**" />
+		<None Remove="Mappings\CsvHelper\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="SeedData\X12ClaimCodes.csv" />
+		<None Remove="SeedData\X12ClaimCodes_1.csv" />
+		<None Remove="SqlScripts\ClientInsuranceRpaConfiguration.sql" />
+		<None Remove="SqlScripts\DeleteAllForASingleClient.sql" />
+		<None Remove="SqlScripts\DeleteForAllClientsButOne.sql" />
+		<None Remove="SqlScripts\DenialsByInsurance.sql" />
+		<None Remove="SqlScripts\Enum_seeds.sql" />
+		<None Remove="SqlScripts\fnCalculateBillingKpi.sql" />
+		<None Remove="SqlScripts\fnCalculateDailyKpi.sql" />
+		<None Remove="SqlScripts\fnCalculateDailyKpiFromDate.sql" />
+		<None Remove="SqlScripts\fnCalculateDailyKpiToDate.sql" />
+		<None Remove="SqlScripts\fnCalculateExecutiveMonthlyDaysInAR.sql" />
+		<None Remove="SqlScripts\fnCalculateMonthlyDaysInAR.sql" />
+		<None Remove="SqlScripts\fnCalculatePercentage.sql" />
+		<None Remove="SqlScripts\fnGetClaimLevelGroups.sql" />
+		<None Remove="SqlScripts\fnGetClaimSummary.sql" />
+		<None Remove="SqlScripts\fnGetInitialClaimEntry.sql" />
+		<None Remove="SqlScripts\fnGetInitialClaimsSummary.sql" />
+		<None Remove="SqlScripts\fnGetInitialMonthlyClaimSummary.sql" />
+		<None Remove="SqlScripts\fnGetMonthlyClaimSummary.sql" />
+		<None Remove="SqlScripts\fnHasAlphaSplitMatch.sql" />
+		<None Remove="SqlScripts\GetClientHolidayDatesByMonth.sql" />
+		<None Remove="SqlScripts\GetHolidayDate.sql" />
+		<None Remove="SqlScripts\spCalculateExecutiveMonthlyDaysInAR.sql" />
+		<None Remove="SqlScripts\spCalculateMonthlyDaysInAR.sql" />
+		<None Remove="SqlScripts\spCalculateMonthlyDaysInARForClientInsurances.sql" />
+		<None Remove="SqlScripts\spCalculateMonthlyDaysInARForClients.sql" />
+		<None Remove="SqlScripts\spChargesByPayer.sql" />
+		<None Remove="SqlScripts\spChargesByProcedureCode.sql" />
+		<None Remove="SqlScripts\spChargesByProvider.sql" />
+		<None Remove="SqlScripts\spCurrentSummaryExportQuery.sql" />
+		<None Remove="SqlScripts\spDynamicExportDashboardQuery.sql" />
+		<None Remove="SqlScripts\spDynamicExportQuery.sql" />
+		<None Remove="SqlScripts\spExportCashValueOfRevenue.sql" />
+		<None Remove="SqlScripts\spExportDenialDetailQuery.sql" />
+		<None Remove="SqlScripts\spGetAllClientFeeScheduleEntryByClaims.sql" />
+		<None Remove="SqlScripts\spGetARAgingReportExportDetails.sql" />
+		<None Remove="SqlScripts\spGetARAgingReportExportSummary.sql" />
+		<None Remove="SqlScripts\spGetARAgingSummaryReport.sql" />
+		<None Remove="SqlScripts\spGetARAgingTotals.sql" />
+		<None Remove="SqlScripts\spGetAutoCalculateFeeScheduleData.sql" />
+		<None Remove="SqlScripts\spGetAverageDaysToPayByProvider.sql" />
+		<None Remove="SqlScripts\spGetAvgAllowedAmtDateWise.sql" />
+		<None Remove="SqlScripts\spGetAvgDaysToPay.sql" />
+		<None Remove="SqlScripts\spGetAvgDaysToPayByLocation.sql" />
+		<None Remove="SqlScripts\spGetAvgDaysToPayByPayer.sql" />
+		<None Remove="SqlScripts\spGetAvgDaysToPayByProcedureCode.sql" />
+		<None Remove="SqlScripts\spGetAvgDaysToPayByProvider.sql" />
+		<None Remove="SqlScripts\spGetBillingKpiQuery.sql" />
+		<None Remove="SqlScripts\spGetCashProjectionByDay.sql" />
+		<None Remove="SqlScripts\spGetCashValueOfRevenue.sql" />
+		<None Remove="SqlScripts\spGetChargesByLocation.sql" />
+		<None Remove="SqlScripts\spGetChargesMonthly.sql" />
+		<None Remove="SqlScripts\spGetClaimInProcessDateWise.sql" />
+		<None Remove="SqlScripts\spGetClaimInProcessMasterReport.sql" />
+		<None Remove="SqlScripts\spGetClaimInProcessReport.sql" />
+		<None Remove="SqlScripts\spGetClaimRate.sql" />
+		<None Remove="SqlScripts\spGetClaimsSummary.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusBatchClaimsTotals.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusDateLag.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusInProcessTotals.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusInProcessTotalsDashboardtask.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusProductivity.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusProductivityByDayTask.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusReport.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusRevenueTotals.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTilesData.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTotals.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTotalsDateWise.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTotalsTask.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTransactionTotals.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTrends.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTrendsByDay.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTrendsByMonth.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusTrendsByWeek.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedChargeProductivity.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedChargeProductivityByDay.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedChargeTrendsByDay.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedChargeTrendsByMonth.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedChargeTrendsByWeek.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedTotals.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusUploadedTotalsDashboardtask.sql" />
+		<None Remove="SqlScripts\spGetClaimStatusVisitsForProcedureDashboard.sql" />
+		<None Remove="SqlScripts\spGetClaimSummaryTotals.sql" />
+		<None Remove="SqlScripts\spGetClientFeeScheduleEntryByClaims.sql" />
+		<None Remove="SqlScripts\spGetCurrentAROverPercentageNintyDaysClient.sql" />
+		<None Remove="SqlScripts\spGetCurrentAROverPercentageNintyDaysLocation.sql" />
+		<None Remove="SqlScripts\spGetCurrentAROverPercentageNintyDaysPayer.sql" />
+		<None Remove="SqlScripts\spGetCurrentMonthCharges.sql" />
+		<None Remove="SqlScripts\spGetCurrentMonthDenials.sql" />
+		<None Remove="SqlScripts\spGetCurrentMonthEmployeeWork.sql" />
+		<None Remove="SqlScripts\spGetCurrentMonthPayments.sql" />
+		<None Remove="SqlScripts\spGetDenialReasonsByInsurance.sql" />
+		<None Remove="SqlScripts\spGetDenialReasonsByLocation.sql" />
+		<None Remove="SqlScripts\spGetDenialReasonsByProcedureCode.sql" />
+		<None Remove="SqlScripts\spGetDenialReasonsByProvider.sql" />
+		<None Remove="SqlScripts\spGetDenialsByInsuranceDateWise.sql" />
+		<None Remove="SqlScripts\spGetDenialsByProcedure.sql" />
+		<None Remove="SqlScripts\spGetDenialTotalsbyPayer.sql" />
+		<None Remove="SqlScripts\spGetEmployeeClaimStatusTransactionLineItemStatusChangẹDetails.sql" />
+		<None Remove="SqlScripts\spGetExecutiveClaimRate.sql" />
+		<None Remove="SqlScripts\spGetExecutiveCurrentMonthCharges.sql" />
+		<None Remove="SqlScripts\spGetExecutiveCurrentMonthDenials.sql" />
+		<None Remove="SqlScripts\spGetExecutiveCurrentMonthEmployeeWork.sql" />
+		<None Remove="SqlScripts\spGetExecutiveCurrentMonthPayments.sql" />
+		<None Remove="SqlScripts\spGetFinancialSummary.sql" />
+		<None Remove="SqlScripts\spGetFinancialSummaryTotals.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimsSummaryQuery.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimsSummaryTotals.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusDenialTotals.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusDetails.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusInProcessDetails.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusInProcessTotals.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusTotals.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusUploadedTotals.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusUploadedTotalsTask.sql" />
+		<None Remove="SqlScripts\spGetInitialClaimStatusVisits.sql" />
+		<None Remove="SqlScripts\spGetInitialDenialsByInsurance.sql" />
+		<None Remove="SqlScripts\spGetInitialInProcessClaims.sql" />
+		<None Remove="SqlScripts\spGetInsuranceTotalsByLocation.sql" />
+		<None Remove="SqlScripts\spGetInsuranceTotalsByProcedureCode.sql" />
+		<None Remove="SqlScripts\spGetInsuranceTotalsByProvider.sql" />
+		<None Remove="SqlScripts\spGetLastFourYearClaims.sql" />
+		<None Remove="SqlScripts\spGetMonthlyDenialsTask.sql" />
+		<None Remove="SqlScripts\spGetPayerReimbursementByLocation.sql" />
+		<None Remove="SqlScripts\spGetPayerReimbursementByProcedureCode.sql" />
+		<None Remove="SqlScripts\spGetPayerReimbursementByProvider.sql" />
+		<None Remove="SqlScripts\spGetPaymentTotalsbyPayer.sql" />
+		<None Remove="SqlScripts\spGetProcedureReimbursementByLocation.sql" />
+		<None Remove="SqlScripts\spGetProcedureReimbursementByProvider.sql" />
+		<None Remove="SqlScripts\spGetProcedureTotalsByLocation.sql" />
+		<None Remove="SqlScripts\spGetProcedureTotalsByProvider.sql" />
+		<None Remove="SqlScripts\spGetProviderDenialReasonTotal.sql" />
+		<None Remove="SqlScripts\spGetProviderProcedureTotal.sql" />
+		<None Remove="SqlScripts\spGetProvidersDetails.sql" />
+		<None Remove="SqlScripts\spGetProviderTotalsbyPayer.sql" />
+		<None Remove="SqlScripts\spGetProviderTotalsByProcedure.sql" />
+		<None Remove="SqlScripts\spGetProviderTotalsByProcedureCode.sql" />
+		<None Remove="SqlScripts\spGetReimbursementByLocation.sql" />
+		<None Remove="SqlScripts\spGetReimbursementByProcedureCode.sql" />
+		<None Remove="SqlScripts\spGetReimbursementByProvider.sql" />
+		<None Remove="SqlScripts\spGetTotalsByPayer.sql" />
+		<None Remove="SqlScripts\spPaymentsMonthly.sql" />
+		<None Remove="SqlScripts\spUpdateClaimStatusExceptionReasonCategory.sql" />
+		<None Remove="SqlScripts\spVerifyDailyClaimReportTotals.sql" />
+		<None Remove="SqlScripts\sql_query_to_Verify_DailyClaim report.sql" />
+		<None Remove="SqlScripts\Updates\UpdateInputDocumentUrlForBlobStorage.sql" />
+		<None Remove="Templates\ApprovedForMoreThanSixDays - Copy (2).template" />
+		<None Remove="Templates\ApprovedForMoreThanSixDays.template" />
+		<None Remove="SqlScripts\spUpdateClaimStatusBatchClaimsPatientReference.sql" />
+		<None Remove="Templates\BatchCompletedEmailTemplate.template" />
+		<None Remove="Templates\ClaimStatusTotalReport.template" />
+		<None Remove="Templates\DailyClaimStatusReport.template" />
+		<None Remove="Templates\DaysWaitLapsedClaimsEmail.template" />
+		<None Remove="Templates\DOSendYesterdfaysDeniedClaimsToEmployees.template" />
+		<None Remove="Templates\DoSendEligibilityEmailReport.template" />
+		<None Remove="Templates\ExcedingDenial.template" />
+		<None Remove="Templates\FailedClientInsuranceRpaConfigurations - Copy (2).template" />
+		<None Remove="Templates\FailedClientInsuranceRpaConfigurations - Copy.template" />
+		<!--<None Remove="Templates\ExpiringAuthorizationEmail.template" />-->
+		<None Remove="Templates\FailedClientInsuranceRpaConfigurations.template" />
+		<None Remove="Templates\FailedClientInsuranceRpaConfigurations.template_old" />
+		<None Remove="Templates\InProcessClaimsReport.template" />
+		<None Remove="Templates\ReportSummaryTemplate.template" />
+		<None Remove="Templates\UncheckedClaimsEmail.template" />
+		<None Remove="Templates\UnknownStatusClaims.template" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="DatabaseSeeder.cs" />
+		<Compile Remove="Identity\ApplicationRole.cs" />
+		<Compile Remove="Identity\ApplicationRoleClaim.cs" />
+		<Compile Remove="Migrations\20230712113855_renamedClientreportFilter.cs" />
+		<Compile Remove="Migrations\20230712113855_renamedClientreportFilter.Designer.cs" />
+		<Compile Remove="Migrations\20230713113248_MadeInputDocumentClientInsuranceIdNullable.cs" />
+		<Compile Remove="Migrations\20230713113248_MadeInputDocumentClientInsuranceIdNullable.Designer.cs" />
+		<Compile Remove="Migrations\20230810171643_MergedEntities.cs" />
+		<Compile Remove="Migrations\20230810171643_MergedEntities.Designer.cs" />
+		<Compile Remove="Migrations\20240425104537_Updated-the-ClientLocationInsuranceRpaConfiguration.cs" />
+		<Compile Remove="Migrations\20240425104537_Updated-the-ClientLocationInsuranceRpaConfiguration.Designer.cs" />
+		<Compile Remove="Migrations\20240502122030_Delete-ClientLocationInsuranceRpaConfigurations-entity.cs" />
+		<Compile Remove="Migrations\20240502122030_Delete-ClientLocationInsuranceRpaConfigurations-entity.Designer.cs" />
+		<Compile Remove="Partials\DatabaseSeeder.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="Templates\ReportSummaryTemplate.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\ClaimStatusTotalReport.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\ExcedingDenial.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\FailedClientInsuranceRpaConfigurations - Copy (2).template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\FailedClientInsuranceRpaConfigurations - Copy.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\InProcessClaimsReport.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\UnknownStatusClaims.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\BatchCompletedEmailTemplate.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\BatchCompletedEmailTemplate.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\DaysWaitLapsedClaimsEmail.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\FailedClientInsuranceRpaConfigurations.template_old">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\ApprovedForMoreThanSixDays.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\UncheckedClaimsEmail.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\DoSendYesterdfaysDeniedClaimsToEmployees.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\DoSendEligibilityEmailReport.template">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\DailyClaimStatusReport.template">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\FailedClientInsuranceRpaConfigurations.template">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+		<Content Include="Templates\ExpiringAuthorizationEmail.template">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="SeedData\X12ClaimCodes.csv" />
+	  <EmbeddedResource Include="SeedData\X12ClaimCodes_1.csv" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="SeedData\HCPC2020_ANWEB_w_disclaimer.csv" />
+		<EmbeddedResource Include="SqlScripts\Updates\UpdateInputDocumentUrlForBlobStorage.sql" />
+	</ItemGroup>
+
+	<!--<ItemGroup>
+    <Compile Remove="Constants\**" />
+    <Compile Remove="Identity\**" />
+    <Compile Remove="Persistence\**" />
+    <EmbeddedResource Remove="Constants\**" />
+    <EmbeddedResource Remove="Identity\**" />
+    <EmbeddedResource Remove="Persistence\**" />
+    <None Remove="Constants\**" />
+    <None Remove="Identity\**" />
+    <None Remove="Persistence\**" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.4.0" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="EPPlus" Version="7.0.4" />
+    <PackageReference Include="Finbuckle.MultiTenant.AspNetCore" Version="6.12.0" />
+    <PackageReference Include="Finbuckle.MultiTenant.EntityFrameworkCore" Version="6.12.0" />
+    <PackageReference Include="Hangfire" Version="1.8.6" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.6" />
+    <PackageReference Include="HttpClientToCurl" Version="2.0.6" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+    <PackageReference Include="RazorEngineCore" Version="2023.11.2" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalApiClients\UHC\UhcClaimsApi\UhcClaimsApi.csproj" />
+    <ProjectReference Include="..\MedHelpAuthorizations.Application\MedHelpAuthorizations.Application.csproj" />
+    <ProjectReference Include="..\MedHelpAuthorizations.Client.Infrastructure\MedHelpAuthorizations.Client.Infrastructure.csproj" />
+    <ProjectReference Include="..\MedHelpAuthorizations.Infrastructure.Identity\MedHelpAuthorizations.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\MedHelpAuthorizations.Infrastructure.Shared\MedHelpAuthorizations.Infrastructure.Shared.csproj" />
+    <ProjectReference Include="..\MedHelpAuthorizations.Shared\MedHelpAuthorizations.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SeedData\HCPC2020_ANWEB_w_disclaimer.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="SqlScripts\RpaInsuranceGroupQuery\DropConstraintsAndMigrateRpaInsuranceGroupsData.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="SqlScripts\ResponsiblePartyScript\RecreateForeignKeys.sql">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Templates\BatchCompletedEmailTemplate.template">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Identity\" />
+    <Folder Include="MultiTenancy\" />
+    <Folder Include="Partials\" />
+    <Folder Include="Services\DfStaging\" />
+  </ItemGroup>
+
+</Project>

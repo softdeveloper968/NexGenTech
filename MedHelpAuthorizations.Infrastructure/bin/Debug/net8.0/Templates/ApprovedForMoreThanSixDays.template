@@ -1,0 +1,71 @@
+﻿<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+	<tr>
+		<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+			<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi,</p>
+			<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">@Model?.Message</p>
+
+			<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+				<style>
+					table {
+					font-family: arial, sans-serif;
+					border-collapse: collapse;
+					width: 100%;
+					}
+
+					tr > th {
+					background: #286090;
+					color: white;
+					border: 1px solid #f1f1f4;
+					}
+
+					td, th {
+					border: 1px solid #dddddd;
+					text-align: left;
+					padding: 8px;
+					}
+				</style>
+				<tr>
+					<th>Policy #</th>
+					<th>Insurance Name</th>
+					<th>Office Claim No</th>
+					<th>Insurance Claim No</th>
+					<th>Status</th>
+					<th>Approved Since</th>
+					<th>Billed On</th>
+					<th>DOS</th>
+					<th>Procedure Code</th>
+					<th>Modifiers</th>
+					<th>Quantity</th>
+					<th>Location Name</th>
+					<th>Provider Name</th>
+					<th>Billed Amount</th>
+					<th>Client Location Name</th>
+					<th>Client Location Npi</th>
+
+				</tr>
+				@foreach(var item in Model.ApprovedClaims)
+				{
+				<tr>
+						<td>@item?.PolicyNumber</td>
+						<td>@item?.InsuranceName</td>
+						<td>@item?.OfficeClaimNumber</td>
+						<td>@item?.InsuranceClaimNumber</td>
+						<td>@item?.ClaimLineItemStatusId.ToString()</td>
+						<td>@item?.ApprovedSinceDate</td>
+						<td>@item?.ClaimBilledOn</td>
+						<td>@item?.DateOfService</td>
+						<td>@item?.ProcedureCode</td>
+						<td>@item?.Modifiers</td>
+						<td>@item?.Quantity</td>
+						<td>@item?.LocationName</td>
+						<td>@item?.ProviderNameLastCommaFirst</td>
+						<td>@item?.BilledAmount</td>
+						<td>@item?.ClientLocationName</td>
+						<td>@item?.ClientLocationNpi</td>
+					</tr>
+				}
+			</table>
+
+		</td>
+	</tr>
+</table>
