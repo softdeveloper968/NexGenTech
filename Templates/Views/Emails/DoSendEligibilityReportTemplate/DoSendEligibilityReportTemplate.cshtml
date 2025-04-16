@@ -1,0 +1,84 @@
+﻿@using MedHelpAuthorizations.Template.Views.Emails.DoSendEligibilityReportTemplate
+@model SendEligibilityReportToEmployeesViewModel
+
+@{
+
+    // ViewData["EmailTitle"] = "AIT Financials";
+}
+
+<td bgcolor="#ffffff" align="left" style="padding: 20px 22px 15px 22px;color: #666666;font-family: 'Montserrat', sans-serif;font-size: 18px;font-weight: 400;line-height: 25px;border-top: 1px solid #eee;">
+    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">@Model.Greeting, <b>@Model.FirstName</b></p>
+    <p style="font-size: 16px;font-weight: 400;color: #333;margin: 0 0 15px;">Please see attached for Eligibility details.</p>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width: 100%;font-family: 'Montserrat', sans-serif;margin-bottom: 20px;margin-bottom: 20px;margin-bottom: 20px;">
+        <tbody>
+            <tr>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;">Corrected Insurances</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">Count</th>
+            </tr>
+            @foreach (var item in Model.CorrectedInsurances)
+            {
+                <tr>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.PayerName </td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width: 100%;font-family: 'Montserrat', sans-serif;margin-bottom: 20px;margin-bottom: 20px;margin-bottom: 20px;">
+        <tbody>
+            <tr>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;">Eligible Insurances</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">Count</th>
+            </tr>
+            @foreach (var item in Model.EligibleInsurances)
+            {
+                <tr>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.PayerName</td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width: 100%;font-family: 'Montserrat', sans-serif;margin-bottom: 20px;margin-bottom: 20px;margin-bottom: 20px;">
+        <tbody>
+            <tr>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;">Discovered Eligibility</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">Count</th>
+            </tr>
+            @foreach (var item in Model.DiscoveredEligibility)
+            {
+                <tr>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.PayerName</td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width: 100%;font-family: 'Montserrat', sans-serif;margin-bottom: 20px;margin-bottom: 20px;margin-bottom: 20px;">
+        <tbody>
+            <tr>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;">Self-Pay</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">Count</th>
+            </tr>
+            @foreach (var item in Model.SelfPayEligibility)
+            {
+                <tr>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.PayerName</td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.Count</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width: 100%;font-family: 'Montserrat', sans-serif;margin-top:50px;margin-bottom: 20px;margin-bottom: 20px;margin-bottom: 20px;">
+        <tbody>
+            <tr>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;min-width: 150px;">Total Reviewed insurances</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">@Model.ReviewedInsurancesTotalCount</th>
+            </tr>
+               
+        </tbody>
+    </table>
+</td>
+
+
+

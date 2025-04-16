@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">	<PropertyGroup>		<TargetFramework>net8.0</TargetFramework>		<Authors>Kevin Mcaffery</Authors>		<Company>Automated Integration Technologies</Company>		<Description>MedHelpAuthorizations.Application</Description>	</PropertyGroup>	<ItemGroup>		<Compile Remove="Features\Administration\ClientLocationInsuranceIdentifier\Queries\GetAllByClientId\**" />		<Compile Remove="Features\IntegratedServices\InputDocuments\GetByClientId\**" />		<Compile Remove="Features\Questionnaires\Queries\GetQuestionnaireByClientId\**" />
+		<Compile Remove="Mappings\Converters\**" />		<Compile Remove="Mappings\CsvHelperMappings\**" />		<Compile Remove="Requests\Identity\**" />		<Compile Remove="Requests\IntegratedServices\InputDocuments\**" />		<Compile Remove="Requests\IntegratedServices\RpaInsurances\**" />		<EmbeddedResource Remove="Features\Administration\ClientLocationInsuranceIdentifier\Queries\GetAllByClientId\**" />		<EmbeddedResource Remove="Features\IntegratedServices\InputDocuments\GetByClientId\**" />		<EmbeddedResource Remove="Features\Questionnaires\Queries\GetQuestionnaireByClientId\**" />
+		<EmbeddedResource Remove="Mappings\Converters\**" />		<EmbeddedResource Remove="Mappings\CsvHelperMappings\**" />		<EmbeddedResource Remove="Requests\Identity\**" />		<EmbeddedResource Remove="Requests\IntegratedServices\InputDocuments\**" />		<EmbeddedResource Remove="Requests\IntegratedServices\RpaInsurances\**" />		<None Remove="Features\Administration\ClientLocationInsuranceIdentifier\Queries\GetAllByClientId\**" />		<None Remove="Features\IntegratedServices\InputDocuments\GetByClientId\**" />		<None Remove="Features\Questionnaires\Queries\GetQuestionnaireByClientId\**" />
+		<None Remove="Mappings\Converters\**" />		<None Remove="Mappings\CsvHelperMappings\**" />		<None Remove="Requests\Identity\**" />		<None Remove="Requests\IntegratedServices\InputDocuments\**" />		<None Remove="Requests\IntegratedServices\RpaInsurances\**" />	</ItemGroup>  <ItemGroup>
+    <Compile Remove="Common\Models\PaginationResponseExtensions.cs" />
+    <Compile Remove="Common\Persistence\IDapperRepository.cs" />
+    <Compile Remove="Common\Persistence\IRepository.cs" />
+    <Compile Remove="Common\Specification\AuditableEntitiesByCreatedOnBetweenSpec.cs" />
+    <Compile Remove="Common\Specification\EntitiesByBaseFilterSpec.cs" />
+    <Compile Remove="Common\Specification\EntitiesByPaginationFilterSpec.cs" />
+    <Compile Remove="Common\Specification\SpecificationBuilderExtensions.cs" />
+    <Compile Remove="Enums\UploadType.cs" />
+    <Compile Remove="Features\Addresses\Commands\CreateAddress\CreateAddressCommandValidator.cs" />
+    <Compile Remove="Features\Addresses\Commands\UpdateAddress\UpdateAddressCommandValidator.cs" />
+    <Compile Remove="Features\Addresses\Commands\UpsertAddresses\UpsertAddressCommandValidator.cs" />
+    <Compile Remove="Features\Addresses\Queries\GetAddresses\GetAddressByDeliveryPointQuery.cs" />
+    <Compile Remove="Features\Addresses\Queries\GetAddresses\GetAddressesByCriteriaParameter.cs" />
+    <Compile Remove="Features\Addresses\Queries\GetAllAddresses\GetAllAddressesParameter.cs" />
+    <Compile Remove="Features\Administration\ClientInsuranceFeeSchedule\Command\AddEdit\AddEditClientInsuranceFeeScheduleViewModel.cs" />
+    <Compile Remove="Features\Administration\EmployeeClaimStatus\Queries\GetEmployeeClaimStatusByEmployeeID\GetEmployeeClaimStatusByEmployeeId.cs" />
+    <Compile Remove="Features\Cardholders\Queries\GetAllPaged\GetAllPagedCardholdersResponse.cs" />
+    <Compile Remove="Features\Cardholders\Queries\GetByCriteriaPaged\GetCardholdersByCriteriaResponse.cs" />
+    <Compile Remove="Features\Cardholders\Queries\GetById\GetCardholderByIdResponse.cs" />
+    <Compile Remove="Features\Cardholders\Queries\GetByPatientId\GetCardholderByPatientIdResponse.cs" />
+    <Compile Remove="Features\Cardholders\Queries\GetbySearchText\GetCardholdersBySearchStringResponse.cs" />
+    <Compile Remove="Features\IntegratedServices\RpaInsurances\Queries\GetAllPaged\GetAllIRpaInsurancesQuery.cs" />
+    <Compile Remove="Features\Persons\Commands\CreatePerson\CreatePersonCommandValidator.cs" />
+    <Compile Remove="Features\Persons\Commands\UpdatePerson\UpdatePersonCommandValidator.cs" />
+    <Compile Remove="Features\Persons\Commands\UpsertPerson\UpsertPersonCommandValidator.cs" />
+    <Compile Remove="Features\Persons\Queries\GetAllPersons\GetAllPersonsParameter.cs" />
+    <Compile Remove="Features\Reports\Queries\GetExpiringAuthorizations\GetByNumberDaysDueQuery.cs" />
+    <Compile Remove="Features\Reports\Queries\GetExpiringAuthorizations\GetByNumberDaysDueResponse.cs" />
+    <Compile Remove="Interfaces\Common\IScopedService.cs" />
+    <Compile Remove="Mappings\ProductProfile.cs" />
+    <Compile Remove="Requests\PagedRequest.cs" />
+    <Compile Remove="Requests\UploadRequest.cs" />
+    <Compile Remove="Responses\Identity\TokenResponse.cs" />
+  </ItemGroup>
+	<ItemGroup>		<Compile Remove="Enums\UploadType.cs" />		<Compile Remove="Features\Addresses\Commands\CreateAddress\CreateAddressCommandValidator.cs" />		<Compile Remove="Features\Addresses\Commands\UpdateAddress\UpdateAddressCommandValidator.cs" />		<Compile Remove="Features\Addresses\Commands\UpsertAddresses\UpsertAddressCommandValidator.cs" />		<Compile Remove="Features\Addresses\Queries\GetAddresses\GetAddressByDeliveryPointQuery.cs" />		<Compile Remove="Features\Addresses\Queries\GetAddresses\GetAddressesByCriteriaParameter.cs" />		<Compile Remove="Features\Addresses\Queries\GetAllAddresses\GetAllAddressesParameter.cs" />		<Compile Remove="Features\Administration\EmployeeClaimStatus\Queries\GetEmployeeClaimStatusByEmployeeID\GetEmployeeClaimStatusByEmployeeId.cs" />		<Compile Remove="Features\Cardholders\Queries\GetAllPaged\GetAllPagedCardholdersResponse.cs" />		<Compile Remove="Features\Cardholders\Queries\GetByCriteriaPaged\GetCardholdersByCriteriaResponse.cs" />		<Compile Remove="Features\Cardholders\Queries\GetById\GetCardholderByIdResponse.cs" />		<Compile Remove="Features\Cardholders\Queries\GetByPatientId\GetCardholderByPatientIdResponse.cs" />		<Compile Remove="Features\Cardholders\Queries\GetbySearchText\GetCardholdersBySearchStringResponse.cs" />		<Compile Remove="Features\IntegratedServices\ClaimStatus\ClaimStatusBatchClaims\Queries\GetUnresolvedByBatchId\GetQualifiedUnresolvedBatchClaimsByBatchIdQuery.cs" />		<Compile Remove="Features\IntegratedServices\RpaInsurances\Queries\GetAllPaged\GetAllIRpaInsurancesQuery.cs" />		<Compile Remove="Features\Persons\Commands\CreatePerson\CreatePersonCommandValidator.cs" />		<Compile Remove="Features\Persons\Commands\UpdatePerson\UpdatePersonCommandValidator.cs" />		<Compile Remove="Features\Persons\Commands\UpsertPerson\UpsertPersonCommandValidator.cs" />		<Compile Remove="Features\Persons\Queries\GetAllPersons\GetAllPersonsParameter.cs" />		<Compile Remove="Features\Reports\Queries\GetExpiringAuthorizations\GetByNumberDaysDueQuery.cs" />		<Compile Remove="Features\Reports\Queries\GetExpiringAuthorizations\GetByNumberDaysDueResponse.cs" />		<Compile Remove="Requests\PagedRequest.cs" />		<Compile Remove="Requests\UploadRequest.cs" />		<Compile Remove="Responses\Identity\TokenResponse.cs" />		<Compile Remove="Specifications\EmployeeClaimStatusExceptionReasonCategoriesSpecification.cs" />	</ItemGroup>	<ItemGroup>		<Compile Include="Mappings\Converters\DateTimeTypeConverter.cs" />		<Compile Include="Requests\Identity\ChangePasswordRequest.cs" />		<Compile Include="Requests\Identity\ChangePinRequest.cs" />		<Compile Include="Requests\Identity\CreateUserRequest.cs" />
+		<Compile Include="Requests\Identity\ForgotPasswordRequest.cs" />		<Compile Include="Requests\Identity\PermissionRequest.cs" />		<Compile Include="Requests\Identity\RegisterRequest.cs" />		<Compile Include="Requests\Identity\ResetPasswordRequest.cs" />		<Compile Include="Requests\Identity\RoleClaimsRequest.cs" />		<Compile Include="Requests\Identity\RoleRequest.cs" />		<Compile Include="Requests\Identity\StatusUpdateRequest.cs" />		<Compile Include="Requests\Identity\ToggleUserStatusRequest.cs" />		<Compile Include="Requests\Identity\UpdatePasswordRequest.cs" />		<Compile Include="Requests\Identity\UpdatePinRequest.cs" />
+		<Compile Include="Requests\Identity\UpdateProfilePictureRequest.cs" />		<Compile Include="Requests\Identity\UpdateProfileRequest.cs" />		<Compile Include="Requests\Identity\UpdateUserBasicInfoRequest.cs" />
+		<Compile Include="Requests\Identity\UpdateUserRolesRequest.cs" />		<Compile Include="Requests\Identity\UpdateUserTenantClientRequest.cs" />
+	</ItemGroup>	<ItemGroup>		<PackageReference Include="AutoMapper" Version="12.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.20.0" />
+		<PackageReference Include="CsvHelper" Version="30.0.1" />
+		<PackageReference Include="Finbuckle.MultiTenant" Version="6.12.0" />
+		<PackageReference Include="FluentValidation" Version="11.9.0" />
+		<PackageReference Include="Hangfire.MemoryStorage" Version="1.8.0" />
+		<PackageReference Include="LazyCache" Version="2.4.0" />		<PackageReference Include="MediatR" Version="12.2.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="8.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>	<ItemGroup>		<ProjectReference Include="..\ExternalApiClients\UHC\UhcClaimsApi\UhcClaimsApi.csproj" />		<ProjectReference Include="..\MedHelpAuthorizations.Domain\MedHelpAuthorizations.Domain.csproj" />		<ProjectReference Include="..\MedHelpAuthorizations.Shared\MedHelpAuthorizations.Shared.csproj" />	</ItemGroup>	<ItemGroup>		<Folder Include="Common\Specification\" />		<Folder Include="Features\Administration\ClientCptCodes\Queries\GetByCode\" />		<Folder Include="Features\Administration\UnMappedClientFeeSchedule\Command\CleanUpUnmappedUtlity\" />
+		<Folder Include="Features\Admin\Server\Commands\" />
+		<Folder Include="Features\AuthorizationClientCptCodes\" />		<Folder Include="Features\IntegratedServices\Appeals\Entala\" />		<Folder Include="Features\IntegratedServices\ClaimStatus\ClaimStatusBatchClaims\Commands\Delete\" />		<Folder Include="Features\IntegratedServices\ClaimStatus\ClientInsuranceRpaConfigurations\Queries\NewFolder\" />		<Folder Include="Features\IntegratedServices\RpaInsurances\Queries\GetAllPaged\" />		<Folder Include="Features\Persons\Queries\Base\" />		<Folder Include="Features\Reports\Internal\" />		<Folder Include="Interfaces\Repositories\DfStaging\" />		<Folder Include="Requests\IntegratedServices\ClaimStatus\" />		<Folder Include="Requests\IntegratedServices\ClaimStatus\UHC\" />		<Folder Include="Validators\Features\Products\Commands\AddEdit\" />	</ItemGroup></Project>

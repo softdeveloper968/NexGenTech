@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "Y15JoB0IMLaR4EGMy4qX58Ea1qmwHmaDexvMfjp2wjs=",
+  "Source": "MedHelpAuthorizations.Template",
+  "BasePath": "_content/MedHelpAuthorizations.Template",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

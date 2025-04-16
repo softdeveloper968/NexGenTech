@@ -1,0 +1,66 @@
+﻿<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+	<tr>
+		<td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
+			<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi,</p>
+			<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Please see attached for more details.</p>
+
+			<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+				<style>
+					table {
+					font-family: arial, sans-serif;
+					border-collapse: collapse;
+					width: 100%;
+					}
+
+					tr > th {
+					background: #286090;
+					color: white;
+					border: 1px solid #f1f1f4;
+					}
+
+					td, th {
+					border: 1px solid #dddddd;
+					text-align: left;
+					padding: 8px;
+					}
+				</style>
+				<tr>
+					<th>ClientCode</th>
+					<th>BatchId</th>
+					<th>BatchNumber</th>
+					<th>CreatedOn</th>
+					<th>PayerName</th>
+					<th>RpaInsuranceCode</th>
+					<th>BatchClaimCount</th>
+					<th>UnavailableCount</th>
+					<th>UnavailablePercentage</th>
+					<th>NotFoundCount</th>
+					<th>NotFoundPercentage</th>
+					<th>CountNotFoundUnavailable</th>
+					<th>PercentNotFoundUnavailable</th>
+
+				</tr>
+				@foreach(var item in Model.NotFoundUnavailableClaims)
+				{
+				<tr>
+					<td>@item.ClientCode</td>
+					<td>@item.BatchId</td>
+					<td>@item.BatchNumber</td>
+					<td>@item.CreatedOn</td>
+					<td>@item.PayerName</td>
+					<td>@item.RpaInsuranceCode</td>
+					<td>@item.BatchClaimCount</td>
+					<td>@item.UnavailableCount</td>
+					<td>@item.UnavailablePercentage</td>
+					<td>@item.NotFoundCount</td>
+					<td>@item.NotFoundPercentage</td>
+					<td>@item.CountNotFoundUnavailable</td>
+					<td>@item.PercentNotFoundUnavailable</td>
+				</tr>
+				}
+			</table>
+
+		</td>
+	</tr>
+</table>
+

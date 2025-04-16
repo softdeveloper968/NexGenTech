@@ -1,0 +1,33 @@
+﻿@using MedHelpAuthorizations.Shared.Helpers
+@using MedHelpAuthorizations.Template.Views.Emails.FailedHangfireJobs
+@using RazorHtmlEmails.RazorClassLib.Views.Shared
+@model FailedHangfireJobsViewModel
+
+
+
+<td bgcolor="#ffffff" align="left" style="padding: 20px 22px 15px 22px;color: #666666;font-family: 'Montserrat', sans-serif;font-size: 18px;font-weight: 400;line-height: 25px;border-top: 1px solid #eee;">
+    <p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;"><b>@Model.Greeting</b></p>
+    <p style="font-size: 16px;font-weight: 400;color: #333;margin: 0 0 15px;">Here is the List for failed jobs.</p>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;width: 100%;font-family: 'Montserrat', sans-serif;margin-bottom: 20px;margin-bottom: 20px;margin-bottom: 20px;">
+        <tbody>
+            <tr>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;">JobId</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">JobType</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;">FailedAt</th>
+                <th style="background: #286090;color: white;border: 1px solid #f1f1f4;padding: 8px 12px;text-align: left;font-size: 15px;font-weight: 500;line-height: 16px;width: 30%;min-width: 150px;">Exception</th>
+            </tr>
+            @foreach (var item in Model.FailedHangfireJobs)
+            {
+                <tr>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.JobId </td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.JobType</td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.FailedAt </td>
+                    <td style="border: 1px solid #dddddd;text-align: left;padding: 8px 12px;font-size: 14px;line-height: 18px;">@item.Exception</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</td>
+
+
+

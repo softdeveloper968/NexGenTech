@@ -1,0 +1,20 @@
+//global using Ardalis.Specification;
+global using FluentValidation;
+global using MedHelpAuthorizations.Application.Common.Events;
+global using MedHelpAuthorizations.Application.Common.Exceptions;
+global using MedHelpAuthorizations.Application.Common.FileStorage;
+global using MedHelpAuthorizations.Application.Common.Interfaces;
+global using MedHelpAuthorizations.Application.Common.Models;
+global using MedHelpAuthorizations.Application.Common.Persistence;
+//global using MedHelpAuthorizations.Application.Common.Specification;
+global using MedHelpAuthorizations.Application.Common.Validation;
+//global using MedHelpAuthorizations.Domain.Catalog;
+//global using MedHelpAuthorizations.Domain.Common;
+//global using MedHelpAuthorizations.Domain.Common.Contracts;
+//global using MedHelpAuthorizations.Shared.Notifications;
+global using MediatR;
+global using Microsoft.Extensions.Localization;
+global using Microsoft.Extensions.Logging;
+global using System;
+global using System.Threading.Tasks;
+

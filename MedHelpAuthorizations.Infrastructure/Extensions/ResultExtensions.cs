@@ -1,0 +1,3 @@
+﻿namespace MedHelpAuthorizations.Infrastructure.Extensions
+{
+}

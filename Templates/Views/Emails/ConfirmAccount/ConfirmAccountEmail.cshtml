@@ -1,0 +1,24 @@
+﻿@using MedHelpAuthorizations.Shared.Helpers
+@using RazorHtmlEmails.RazorClassLib.Views.Emails.ConfirmAccount
+@using RazorHtmlEmails.RazorClassLib.Views.Shared
+@model ConfirmAccountEmailViewModel
+
+@{
+
+	// ViewData["EmailTitle"] = "AIT Financials";
+}
+<p>
+	@Model.Greeting, <b>@Model.FirstName</b>.
+</p>
+
+<p>
+	A user account has been created for you.
+</p>
+
+<p>
+	Please click on the button below to confirm your email address and update your password:
+</p>
+@await Html.PartialAsync("EmailButton", new EmailButtonViewModel("Confirm Account", Model.ConfirmEmailUrl))
+
+
+
