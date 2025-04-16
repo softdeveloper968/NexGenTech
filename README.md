@@ -1,1 +1,2 @@
 # NexGenTech
+Tech Stack 
